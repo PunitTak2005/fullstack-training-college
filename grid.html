@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      gap: 10px;
+      height: 100vh;
+      padding: 10px;
+    }
+    .grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      border-radius: 8px;
+      background: #ccc; /* placeholder background */
+    }
+
+    /* Positioning like your reference */
+    .item1 { grid-column: 1 / 3; grid-row: 1 / 2; }
+    .item2 { grid-column: 3 / 4; grid-row: 1 / 3; }
+    .item3 { grid-column: 1 / 2; grid-row: 2 / 3; }
+    .item4 { grid-column: 2 / 3; grid-row: 2 / 3; }
+    .item5 { grid-column: 1 / 2; grid-row: 3 / 4; }
+    .item6 { grid-column: 2 / 3; grid-row: 3 / 4; }
+    .item7 { grid-column: 3 / 4; grid-row: 3 / 4; }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <img src="https://www.historicmysteries.com/wp-content/uploads/2017/01/Machu-Picchu.jpg" alt="Image 1" class="item1">
+    <img src="https://cdn.britannica.com/54/122154-050-4DA0F697/Great-Wall-of-China.jpg" alt="Image 2" class="item2">
+    <img src="https://assets.editorial.aetnd.com/uploads/2011/06/taj-mahal-gettyimages-463924915.jpg" alt="Image 3" class="item3">
+    <img src="https://jooinn.com/images/colosseum-in-rome-3.jpg" alt="Image 4" class="item4">
+    <img src="https://wallpapercave.com/wp/wp1991639.jpg" alt="Image 5" class="item5">
+    <img src="https://1.bp.blogspot.com/-Bj9pmfobFV8/XffpuLSdl3I/AAAAAAAAG9w/XfuyABgW5YcOIAflPVvYSyjFye9RHxexACLcBGAsYHQ/s1600/chichen-itza-riviera-maya_1.jpg" alt="Image 6" class="item6">
+    <img src="https://th.bing.com/th/id/R.84b97bae67a918b545f199605719ab02?rik=Wi7omLBRcAUoPA&riu=http%3a%2f%2fmedia.islamicity.org%2fwp-content%2fuploads%2f2017%2f03%2fAdobeStock_86996307.jpeg&ehk=Bp1BNI8A%2f%2f92x2w%2fx%2beljwLU4jHanWlKYnGGwDPDS9A%3d&risl=1&pid=ImgRaw&r=0" alt="Image 7" class="item7">
+  </div>
+</body>
+</html>

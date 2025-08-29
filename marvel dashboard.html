@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      background: #e62429;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav h1 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('https://wallpapercave.com/wp/wp4073700.jpg') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 40px;
+      background: rgba(0,0,0,0.6);
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 15px;
+    }
+    .card .info h3 {
+      margin-bottom: 10px;
+      color: #e62429;
+    }
+
+    /* Stats */
+    .stats {
+      background: #111;
+      display: flex;
+      justify-content: space-around;
+      padding: 30px;
+    }
+    .stat {
+      text-align: center;
+    }
+    .stat h2 {
+      font-size: 28px;
+      color: #e62429;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>MARVEL DASHBOARD</h1>
+    <ul>
+      <li>Home</li>
+      <li>Heroes</li>
+      <li>Movies</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h2>Welcome to the Marvel Universe</h2>
+  </div>
+
+  <!-- Character Cards -->
+  <div class="cards">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Iron_Man_bleeding_edge.jpg" alt="Iron Man">
+      <div class="info">
+        <h3>Iron Man</h3>
+        <p>Real Name: Tony Stark</p>
+        <p>First Appearance: 1963</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9d/CaptainAmerica109.jpg" alt="Captain America">
+      <div class="info">
+        <h3>Captain America</h3>
+        <p>Real Name: Steve Rogers</p>
+        <p>First Appearance: 1941</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a0/Thor-272.jpg" alt="Thor">
+      <div class="info">
+        <h3>Thor</h3>
+        <p>Real Name: Thor Odinson</p>
+        <p>First Appearance: 1962</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Spider-Man.jpg" alt="Spider-Man">
+      <div class="info">
+        <h3>Spider-Man</h3>
+        <p>Real Name: Peter Parker</p>
+        <p>First Appearance: 1962</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stat">
+      <h2>80+</h2>
+      <p>Years of Marvel</p>
+    </div>
+    <div class="stat">
+      <h2>8000+</h2>
+      <p>Characters</p>
+    </div>
+    <div class="stat">
+      <h2>30+</h2>
+      <p>Movies</p>
+    </div>
+  </div>
+</body>
+</html>
