@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domino's Pizza</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #e6f0f7;
+    }
+
+    
+    header {
+      background: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #0060aa;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: 600;
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    
+    .hero {
+      background: linear-gradient(to right, #052c52, #004080);
+      color: #fff;
+      text-align: left;
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .btn {
+      background: #ff2b40;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero img {
+      width: 350px;
+    }
+
+   
+    .cards {
+      background: #fff;
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card .btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <header>
+    <div class="logo">
+      🍕 Domino’s
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Find Us</a></li>
+        <li><a href="#">Campaign</a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <span>🛒</span>
+      <span>8</span>
+    </div>
+  </header>
+
+  
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Enjoy the <br> Best Pizza</h1>
+      <p>Original Recipe Pizza and plenty of it. Sometimes that’s all you need to turn an average day into a great one.</p>
+      <button class="btn">Order now</button>
+    </div>
+    <img src="https://content.jdmagicbox.com/v2/comp/udaipur-rajasthan/a8/9999px294.x294.220811202334.r8a8/catalogue/uncle-john-s-pizza-mali-colony-udaipur-rajasthan-pizza-outlets-lexuxcomsl.jpg" alt="Pizza">
+  </section>
+
+  
+  <section class="cards">
+    <div class="card">
+      <h3>ANY DAY OFFERS</h3>
+      <p>New Phenomenonal Pizza Taste</p>
+      <h4>$500</h4>
+    </div>
+    <div class="card" style="background:#ff2b40; color:#fff;">
+      <h3>OTHER STYLES</h3>
+      <p>Fresh Ice Creams</p>
+      <h4>₦1500</h4>
+    </div>
+    <div class="card">
+      <h3>FIND A DOMINO NEAR YOU</h3>
+      <p>Locate your nearest Domino store.</p>
+    </div>
+    <div class="card" style="background:#004080; color:#fff;">
+      <h3>CRISPY AND FRESH CHICKEN</h3>
+      <p>Master Chef Style</p>
+      <button class="btn">Order now</button>
+    </div>
+    <div class="card" style="background:#004080; color:#fff;">
+      <h3>DO YOU WANT TO BE A HOPE?</h3>
+      <p>Join our community initiative</p>
+      <button class="btn">See more</button>
+    </div>
+  </section>
+
+</body>
+</html>
