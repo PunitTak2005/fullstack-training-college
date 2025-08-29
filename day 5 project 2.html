@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html { font-size: 16px; }
+
+    /* Navigation bar container */
+    #parent-container {
+      display: flex; /* Flexbox layout */
+      justify-content: space-between; /* Space items, logo left, others right */
+      align-items: center; /* Vertically center items */
+      font-size: 18px; /* Base for em units */
+      padding: 1em; /* 18px padding */
+      border: 2px solid black;
+      box-sizing: border-box;
+      width: 100%; /* Full width */
+      max-width: 1000px; /* Limit width */
+      margin: 10px auto; /* Center nav */
+      background-color: #222; /* Dark "black box" theme */
+      color: white;
+    }
+
+    /* Alternative with rem padding */
+    #parent-container.rem {
+      padding: 1rem; /* 16px padding (root font-size) */
+      border: 2px solid #444;
+      background-color: #333;
+    }
+
+    /* Logo styling */
+    #parent-container .logo {
+      font-size: 1.5em; /* 27px */
+      font-weight: bold;
+      padding: 0.5em;
+    }
+
+    #parent-container .logo img {
+      height: 40px; /* Adjust logo size */
+      vertical-align: middle;
+    }
+
+    /* Search box */
+    #parent-container input[type="text"] {
+      font-size: 14px;
+      padding: 0.5em; /* 7px padding */
+      width: 150px;
+      box-sizing: border-box;
+      border: 1px solid #666;
+      border-radius: 4px;
+      background-color: #444;
+      color: white;
+    }
+
+    #parent-container input[type="text"]::placeholder {
+      color: #aaa; /* Light gray placeholder */
+      opacity: 1;
+    }
+
+    #parent-container input[type="text"]:hover,
+    #parent-container input[type="text"]:focus {
+      background-color: #666;
+      border-color: #888;
+      outline: none;
+    }
+
+    /* Nav items container (for flex nav items) */
+    #parent-container .nav-items {
+      display: flex;
+      gap: 1rem; /* Space between nav items */
+    }
+
+    /* Individual nav items */
+    #parent-container .nav-items div#item.container {
+      font-size: 16px;
+      padding: 0.5em 1em; /* 8px top/bottom, 16px left/right */
+      border: 1px solid #666;
+      box-sizing: border-box;
+      background-color: #444;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    #parent-container .nav-items div#item.container a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    #parent-container .nav-items div#item.container:hover {
+      background-color: #666;
+    }
+
+    /* For comparison: Inline-block nav bar */
+    #parent-container.inline-block {
+      display: block;
+      text-align: center;
+      padding: 1em;
+      width: 100%;
+      max-width: 1000px;
+      margin: 10px auto;
+      background-color: #222;
+      border: 2px solid black;
+      box-sizing: border-box;
+    }
+
+    #parent-container.inline-block .nav-items div#item.container,
+    #parent-container.inline-block input[type="text"] {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    #parent-container.inline-block .logo {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Flexbox nav bar -->
+  <nav id="parent-container">
+    <div class="logo">
+      <!-- Replace with your logo image -->
+      <img src="https://via.placeholder.com/40" alt="Logo">
+      <!-- Or text-based logo -->
+      <!-- <span>Logo</span> -->
+    </div>
+    <input type="text" placeholder="Search...">
+    <div class="nav-items">
+      <div id="item" class="container">
+        <a href="#">Home</a>
+      </div>
+      <div id="item2" class="container">
+        <a href="#">Blog</a>
+      </div>
+      <div id="item3" class="container">
+        <a href="#">Contact</a>
+      </div>
+      <div id="item4" class="container">
+        <a href="#">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Flexbox nav bar with rem padding -->
+  <nav id="parent-container" class="rem">
+    <div class="logo">
+      <img src="https://via.placeholder.com/40" alt="Logo">
+    </div>
+    <input type="text" placeholder="Search...">
+    <div class="nav-items">
+      <div id="item5" class="container">
+        <a href="#">Home</a>
+      </div>
+      <div id="item6" class="container">
+        <a href="#">Blog</a>
+      </div>
+      <div id="item7" class="container">
+        <a href="#">Contact</a>
+      </div>
+      <div id="item8" class="container">
+        <a href="#">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Inline-block nav bar (for comparison) -->
+  <nav id="parent-container" class="inline-block">
+    <div class="logo">
+      <img src="https://via.placeholder.com/40" alt="Logo">
+    </div>
+    <input type="text" placeholder="Search...">
+    <div class="nav-items">
+      <div id="item9" class="container">
+        <a href="#">Home</a>
+      </div>
+      <div id="item10" class="container">
+        <a href="#">Blog</a>
+      </div>
+      <div id="item11" class="container">
+        <a href="#">Contact</a>
+      </div>
+      <div id="item12" class="container">
+        <a href="#">About</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
