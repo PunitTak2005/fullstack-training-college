@@ -1,0 +1,244 @@
+/* input{
+    
+
+
+}
+
+
+input:focus{
+    background-color: aqua;
+    color: rgb(115, 10, 228);
+}
+
+input::placeholder{
+    color: brown;
+}
+
+p::selection{
+    background-color: black;
+    color: darkmagenta;
+}
+
+span::selection{
+    background-color: black;
+    color: darkmagenta;
+}
+
+::selection{
+    background-color: black;
+    color: darkmagenta;
+} */
+
+/* p:hover::after{
+    content: "hello techno";
+    color: rgb(115, 10, 228);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+/* p::before{
+    content: "";
+    background-color: brown;
+    display: inline-block;
+    width: 100px;
+    height:10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+p::after{
+    content: "";
+    background-color: brown;
+    display: inline-block;
+    width: 100px;
+    height:10px;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}
+
+p{
+    text-align: center;
+} */
+
+
+/* p::first-letter{
+    font-size: 30px;
+    color: brown;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p::first-line{
+    font-size: 20px;
+    color: rgb(115, 10, 228);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    
+    
+}
+
+
+
+
+
+/* #container{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(24, 231, 231);
+    position:sticky;
+    top:0;
+    z-index: -1;
+    
+} */
+
+/* div{
+    width: 400px;
+    height: 400px;
+    background-color: rgb(67, 223, 5);
+    position: absolute;
+    top:0;
+    
+   
+}
+    translate scale rotate */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(40, 237, 10);
+}
+
+#container {
+        width: 400px;
+        height: 400px;
+        background-color: rgb(10, 237, 40);
+        color: rgb(91, 42, 165);
+        border-color: blue;
+        border: 10px   solid blue;
+        font-size: 30px;
+        transform: skewY(0deg);
+        display: flex;          /* box ko arrange karne ke liye */
+        justify-content: center; /* horizontally center */
+        align-items: center;     /* vertically center */
+        border-radius: 50%;
+        animation: circle 2s linear infinite ;
+        position: relative;  /* box ko container ke andar rakhne ke liye */
+        overflow: hidden;  /* box ke bahar jo bhi hoga wo nahi dikhhega */
+    }
+
+      #box {
+        width: 130px;
+        height: 130px;
+        background-color: brown;
+        color: white;
+        position: absolute;   /* container ke andar fix karne ke liye */
+        top: 0;   /* upar se 0 */
+        left: 0;  /* left se 0 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 2s; */
+        transform: origin(top left);
+        /* transform: rotate(360deg); */
+        transform-origin: center;
+        
+        border-radius: 50%;
+    }
+
+
+    #container:hover #box {
+        background-color: rgb(81, 0, 255);
+       
+        transition: all 0.5s ease-in-out;
+        
+        transform: translate(100px, 100px )rotate(360deg) scale(4)  skewY(20deg);   
+    
+    }
+
+   @keyframes spinner {
+    0% {
+        transform: translate(0,0) rotate(0deg);
+    }
+    25% {
+        transform: translate(300px, 0px) rotate(90deg);
+    }
+    50% {
+        transform: translate(600px, 300px) rotate(180deg);
+    }
+    75% {
+        transform: translate(900px, 600px) rotate(270deg);
+    }
+    100% {
+        transform: translate(1200px, 900px) rotate(360deg);
+    }
+}
+
+/* WE CAN USE EVERY PERCENTATE INSTEAD OF 0%, 25%, 50%, 75%, 100% */
+
+        @keyframes circle {
+            from {
+              
+                transform: rotate(0deg);
+            }
+            to {
+                
+                transform: rotate(360deg);
+            }}
+    
+/* #item{
+    width:100px;
+    height:100px;
+    background-color: rgb(81, 0, 255);
+} */
+
+
+
+
+
+
+
+
+/* 
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* positon-static default value of position property
+positon-relative relative to its normal position
+positon-absolute relative to its nearest positioned ancestor
+positon-fixed relative to the viewport
+positon-sticky toggles between relative and fixed, depending on the scroll position
+positon-initial sets this property to its default value
+positon-inherit inherits this property from its parent element
+positon-unset resets the property to its inherited value if it inherits from its parent or to its initial value if not */
+
+
